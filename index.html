@@ -1,0 +1,289 @@
+<!DOCTYPE HTML PUBLIC "-//SoftQuad Software//DTD HoTMetaL PRO 6.0::19990601::extensions to HTML 4.0//EN" "hmpro6.dtd">
+<HTML> 
+  <HEAD> 
+	 <TITLE>Picture the Future - Slide 15 Puzzle Numerology</TITLE>
+	 <LINK REL="stylesheet" HREF="c/puzzle.css" MEDIA="all" TYPE="text/css"><LINK
+	 REL="stylesheet" MEDIA="all" TYPE="text/css" ID="numberscolour"
+	 HREF="c/orange.css"> <SCRIPT SRC="cookie.js"></SCRIPT><SCRIPT SRC="j/mootools.v1.00.js" TYPE="text/javascript"></SCRIPT> <SCRIPT SRC="j/puzzle.js" TYPE="text/javascript"></SCRIPT> 
+  </HEAD> 
+  <BODY
+	STYLE="background-image: url(i/bg3.jpg); background-repeat: no-repeat; background-position: 100% 100%"
+	ONLOAD="screenresize();"> 
+	 <DIV ID="content" CLASS="centerme" ALIGN="CENTER" STYLE="top: 400 px;"> 
+		<DIV ID="page1" STYLE="width : 80%; border : 1pt solid black;"> 
+		  <H4 ALIGN="CENTER">Picture the Future - Merging images (focus), a slide
+			 15 puzzle (fun), and a numerology based reading (future).</H4> 
+		  <FORM NAME="MyForm"> 
+			 <P ALIGN="CENTER">1. Enter your name for the reading:
+				<INPUT TYPE="TEXT" NAME="user_name" ID="user_name" SIZE="20"
+				 ONCHANGE="var forever=new Date('October 17, 2030 03:24:00');setCookie('user_name', document.getElementById('user_name').value , forever , '', '', '');"><BR>2.
+				Choose image: 
+				<SELECT NAME="select1" SIZE="1" CLASS="icon-menu" ID="pictures"
+				 ONCHANGE="document.getElementById('imageurl').value = document.getElementById('pictures').value; changepicture();">
+				  
+				  <OPTION VALUE="/PictureTheFuture/i/money.jpg">Money</OPTION> 
+				  <OPTION VALUE="/PictureTheFuture/i/health.jpg">Health</OPTION> 
+				  <OPTION VALUE="/PictureTheFuture/i/future.gif">Future</OPTION> 
+				  <OPTION VALUE="/PictureTheFuture/i/work.jpg">Work</OPTION> 
+				  <OPTION
+					VALUE="/PictureTheFuture/i/religion.gif">Religion</OPTION> 
+				  <OPTION VALUE="/PictureTheFuture/i/travel.jpg">Travel</OPTION> 
+				  <OPTION VALUE="/PictureTheFuture/i/death.gif">Death</OPTION> 
+				  <OPTION
+					VALUE="https://www.somewhereincanada.com/memorials/augustus/vignette.jpg">Love</OPTION>
+				  
+				  <OPTION VALUE="/PictureTheFuture/i/fun.jpg">Fun</OPTION> 
+				  <OPTION VALUE="/PictureTheFuture/i/family.jpg">Family</OPTION> 
+				  <OPTION VALUE="/PictureTheFuture/i/oscar.jpg"
+					SELECTED="SELECTED">Oscar</OPTION> 
+				  <OPTION VALUE="/PictureTheFuture/i/blank.gif">Blank</OPTION> 
+				</SELECT><IMG BORDER="0" SRC="/PictureTheFuture/i/oscar.jpg"
+				ALIGN="ABSMIDDLE" ID="show" HEIGHT="100"></P> 
+			 <P ALIGN="CENTER"> Or use internet image. It can be a URL
+				(http://i.somethingawful.com/u/lowtax/cliffy/274-4.jpg) or a local file
+				(C:\1_15.jpg)<BR> Image URL:
+				<INPUT TYPE="TEXT" SIZE="50" ID="imageurl"
+				 VALUE="/PictureTheFuture/i/oscar.jpg" ONCHANGE="changepicture();"
+				 ONSELECT="this.select();" ONCLICK="this.select();">
+				<INPUT TYPE="BUTTON" NAME="Button1" VALUE="Use Image"
+				 ONCLICK="changepicture();"> <BR>3. Choose grid size: 
+				<SELECT NAME="HowMany" ID="HowMany"
+				 ONCHANGE="var forever=new Date('October 17, 2030 03:24:00');setCookie('HowMany', document.MyForm.HowMany.value , forever , '', '', '');">
+				  
+				  <OPTION VALUE="2">2 x 2</OPTION> 
+				  <OPTION VALUE="3">3 x 3</OPTION> 
+				  <OPTION VALUE="4" SELECTED="SELECTED">4 x 4</OPTION> 
+				  <OPTION VALUE="5">5 x 5</OPTION> 
+				  <OPTION VALUE="6">6 x 6</OPTION> 
+				  <OPTION VALUE="7">7 x 7</OPTION> 
+				  <OPTION VALUE="8">8 x 8</OPTION> 
+				</SELECT><BR><INPUT TYPE="BUTTON" NAME="Button7" VALUE="Ready"
+				ONCLICK="gopage2();"></P> </FORM> 
+		  <P></P> 
+		  <DIV ALIGN="CENTER"> 
+			 <TABLE CELLPADDING="0" CELLSPACING="5" ALIGN="CENTER"> 
+				<TR> 
+				  <TD><FONT SIZE="-1">Slider Puzzle code </FONT><BR><FONT
+					 SIZE="-1">&copy; copyright / nuff-respec /
+					 <A
+					  HREF="http://www.nuff-respec.com/technology/slide-puzzle-javascript-mootools"
+					  TARGET="_blank">daniel bulli</A></FONT><BR><FONT SIZE="-1">Reading code by
+					 <A HREF="http://www.emogic.com/" TARGET="_blank">Emogic</A> </FONT></TD> 
+				  <TD><A
+					 HREF="http://www.nuff-respec.com/technology/slide-puzzle-javascript-mootools"
+					 TARGET="_blank"><IMG SRC="i/nuff-respec.gif" ALT="nuff-respec" WIDTH="55"
+					 HEIGHT="50"></A></TD> 
+				</TR> 
+				<TR> 
+				  <TD></TD> 
+				  <TD></TD> 
+				</TR> 
+			 </TABLE></DIV></DIV> 
+		<DIV ID="page2"> 
+		  <FORM ID="buttonform"> 
+			 <P STYLE="margin-top: 0pt; padding-top: 0pt">
+				<INPUT TYPE="BUTTON" NAME="Button3" VALUE="Make Puzzle"
+				 ONCLICK="Puzzle.make(document.getElementById('HowMany').value); Puzzle.shuffle();">&nbsp;<INPUT
+				TYPE="BUTTON" NAME="Button4" VALUE="Shuffle Pieces"
+				ONCLICK="Puzzle.shuffle()">&nbsp;&nbsp; Number colour: 
+				<SELECT NAME="Select2" SIZE="1"
+				 ONCHANGE="document.getElementById('numberscolour').setAttribute('href', document.getElementById('changecolour').value);"
+				 ID="changecolour"> 
+				  <OPTION VALUE="c/yellow.css">Yellow</OPTION> 
+				  <OPTION VALUE="c/black.css">Black</OPTION> 
+				  <OPTION VALUE="c/red.css">Red</OPTION> 
+				  <OPTION VALUE="c/green.css">Green</OPTION> 
+				  <OPTION VALUE="c/invisible.css">invisible</OPTION> 
+				  <OPTION VALUE="c/orange.css" SELECTED="SELECTED">Orange</OPTION> 
+				</SELECT>&nbsp;&nbsp;<INPUT TYPE="BUTTON" NAME="Button5"
+				VALUE="Solve"
+				ONCLICK="if (confirm('Are you sure? You will only get a reading if YOU solve the puzzle.')) {return Puzzle.fix()}">&nbsp;&nbsp;<INPUT
+				TYPE="BUTTON" NAME="Button6" VALUE="New Puzzle"
+				ONCLICK="if (confirm('Are you sure? This will delete the current puzzle.')) {location.href = location.pathname}
+else{};">&nbsp;&nbsp;<INPUT
+				TYPE="BUTTON" NAME="Button2" VALUE="Email to a friend"
+				ONCLICK="alert('Copy the URL address ' + location.href + ' and paste it in an email to send this image and puzzle to a friend. Please note that the image must be an internet accessible image.'); window.open('mailto:?to=&subject=Picture%20The%20Future&body=' + location.href , '_blank');"></P></FORM>
+		  
+		  <TABLE BORDER="1" CELLPADDING="0" CELLSPACING="0" ALIGN="CENTER"> 
+			 <TR> 
+				<TD> 
+				  <DIV ID="puzzle" ALIGN="CENTER"><IMG ID="image"
+					 SRC="/"></DIV></TD> 
+			 </TR> 
+		  </TABLE></DIV> </DIV> <SCRIPT>
+if ( gup('picture') == '')  
+	{
+	Puzzle.switch_image('https://www.emogic.com/sites/default/files/glasses%20muppet%20oscar%20the%20grouch%201920x1080%20wallpaper_www.vehiclehi.com_64.jpg');
+	gopage1();
+	}
+else
+	{
+	var url =  gup('picture');
+	var url2 = decodeURIComponent(url);
+ document.getElementById('imageurl').value = url2;
+	document.getElementById('show').setAttribute('src',url2);	
+	Puzzle.switch_image(url2);
+	gopage2();
+ }
+
+function changepicture()
+{
+var v = document.getElementById('imageurl').value; 
+location.hash = '?picture=' + v; 	
+document.getElementById('show').setAttribute('src',v);
+Puzzle.switch_image(v);
+}
+
+function screenresize()
+{
+//clear image height incase we have a biggers screen (not a smaller one)
+document.getElementById('image').style.width = '';
+document.getElementById('image').style.height = '';
+
+var browserwidth = window.innerWidth;
+var browserheight = window.innerHeight;
+
+//var heightextrasum =  document.getElementById('buttonform').clientHeight + document.getElementById('fbstuff').clientHeight + 40;
+var heightextrasum =  document.getElementById('buttonform').clientHeight + 40;
+var widthextrasum = 40;
+
+potentialwidth = (browserwidth - widthextrasum)	; //width of view screen
+potentialheight = (browserheight - heightextrasum)	; //height of view screen 
+
+imagewidth = document.getElementById('image').width;
+imageheight = document.getElementById('image').height;
+
+//image dimension settings
+//resize width if required keeping aspect ratio
+if ( imagewidth > potentialwidth )
+	{
+	//reduceby = iw * pw/iw
+	document.getElementById('image').style.width = potentialwidth;
+	document.getElementById('image').style.height = imageheight * potentialwidth / imagewidth;
+	imagewidth = document.getElementById('image').style.width;
+	imageheight = document.getElementById('image').style.height;
+	}
+//resize height if required keeping aspect ratio
+if ( imageheight > potentialheight )
+	{
+	//reduceby = iw * ph/ih
+	document.getElementById('image').style.height = potentialheight;
+	document.getElementById('image').style.width = imagewidth * potentialheight / imageheight;
+	imagewidth = document.getElementById('image').style.width;
+	imageheight = document.getElementById('image').style.height;
+	}
+
+//shift .center me over and up %50
+var centermewidth = document.getElementById('content').offsetWidth;
+var centermeheight =  document.getElementById('content').offsetHeight;
+var xoffset = (browserwidth / 2) - (centermewidth / 2);
+var yoffset = (browserheight / 2) - (centermeheight / 2);
+
+//document.getElementById('content').setAttribute("style","left:" +  xoffset + "px");
+//document.getElementById('content').setAttribute("style","top:" +  yoffset + "px");
+//document.getElementById('content').style.position = "relative"; //needs to be last. stupid!
+}
+
+window.onresize = function(){screenresize()} //set method call on browser resize
+
+function gopage1()
+{
+state = 'page1';
+document.getElementById('page2').style.display = 'none';
+document.getElementById('page1').style.display = 'block'; 
+}
+
+function gopage2()
+{
+state = 'page2';
+document.getElementById('page1').style.display = 'none';
+document.getElementById('page2').style.display = 'block';
+screenresize(); 
+}
+
+audioElement = document.createElement('audio');
+audioElement.setAttribute('src', 'slide.mp3');
+audioElement.setAttribute('preload', 'auto');
+audioElement.setAttribute('autoplay', 'autoplay');	
+
+document.getElementById('user_name').value = getCookie('user_name') || '';
+if (getCookie('HowMany')) 
+	{document.getElementById('HowMany').value = getCookie('HowMany')}; 
+ 
+	
+</SCRIPT> 
+
+<!--FB share start-->
+<style>
+.facebook_button {
+    display: inline-block;
+
+    background: #627aac;
+
+    border-top: 1px solid #29447e;
+    border-right: 1px solid #29447e;
+    border-bottom: 1px solid #1a356e;
+    border-left: none;
+
+    height: 20px;
+
+    padding-right: 7px;
+    padding-left: 7px;
+
+    font-weight: bold;
+    font-size: 11px;
+    color: white;
+    text-decoration: none;
+    font-family: "lucida grande", tahoma, verdana, arial, sans-serif;
+    line-height: 20px;
+
+    cursor: pointer;
+}
+
+#fbstuff
+{
+//position: absolute;
+
+top:0px;
+//position: fixed;
+//bottom: 0;
+}
+</style>
+	 <DIV ID="fb-root"></DIV> <SCRIPT>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=92876366707&version=v2.0";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
+
+function vp()
+{
+var tt = {
+    method: 'share',
+    href: "https://www.emogic.com/",
+  };
+tt.href = window.location.href;
+
+ FB.ui(
+  tt ,
+  function(response) {
+    if (response && !response.error_code) {
+      alert('Posting completed.');
+    } else {
+      alert('Error while posting.');
+    }
+  }
+        );
+};
+</SCRIPT>
+
+<div id='fbstuff' align='center'>
+<div class="fb-like" data-href="https://apps.facebook.com/sliderpuzzle/" data-layout="standard" data-action="like" data-show-faces="false" data-share="true"></div>
+<div class="facebook_button"  ONCLICK="window.open('https://apps.facebook.com/sliderpuzzle/','_blank');" >Play this on FB</div>
+<div class="facebook_button"  ONCLICK="vp();">Share this puzzle on FB</div>
+<div class="facebook_button"  ONCLICK="window.open('https://www.facebook.com/games/sliderpuzzle/','_blank');">Add to your FB Apps</div>
+</div>
+<!--FB share end-->
+  </BODY>
+</HTML>

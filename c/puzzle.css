@@ -1,0 +1,74 @@
+/*
+-----------------------------------------------
+author : daniel bulli
+web    : http://www.nuff-respec.com/technology/slide-puzzle-javascript-mootools
+email  : dbulli_puzzle@nuff-respec.com
+----------------------------------------------- */
+
+/* -- initialize base -- */
+        *, td, img        {margin : 0; padding : 0;}
+        img { border: 1; }
+
+        form, fieldset        {font: 100%/120% verdana, arial, sans-serif}
+        /*p        {padding: 0 0 0 0; margin: 0 0 1em 0}*/
+
+        form label        {cursor: pointer}
+        fieldset        {border: none}
+        input, select, textarea {font-size: 100%}
+
+
+/* -- body -- */
+        body        {
+
+                color: #333436;
+                font-family: "Lucida Sans Unicode", "Trebuchet MS", Helvetica, Sans-Serif;
+                font-size: 13px;
+                line-height: 1.6em;
+                /*padding: 3em 0 3em 50px;*/
+                /*width: 700px;*/
+        }
+
+/* -- [ content ]
+-----------------------------------------------*/
+
+        #content {
+                /*padding: 20px 0 0 50px;*/
+                padding: 5px 0 0 5px;
+        }
+
+        #content h1 {
+                margin-bottom: 1em;
+                color: #7F222B;
+        }
+
+        p {
+                color: #999;
+                font-size: .9em;
+                margin-top: 2em;
+        }
+
+
+/* -- [ footer ]
+-----------------------------------------------*/
+
+        #footer {
+                color: #666;
+                clear: both;
+                font-size: 10px;
+                line-height: 20px;
+                letter-spacing: 1px;
+                /*padding: 0 0 2em 50px;*/
+                height: 6em;
+                overflow: hidden;
+        }
+
+
+/* -- [ links ]
+-----------------------------------------------*/
+
+        /* -- general -- */
+                //a:link,
+                //a:visited        {color: #cf852c; text-decoration: underline;}
+                //a:hover,
+                //a:active,
+                //a:focus                {color: #6A2680; text-decoration: none;}
